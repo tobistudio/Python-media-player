@@ -60,6 +60,21 @@ class Controls:
                     print ('Playing Next Music- Error',e)
                     pass
                 
+
+
+    def update_time_1111(self):
+        while True:
+            time.sleep(2)
+            if self.player.player.playing:
+                pass
+            else:
+                try:
+                    print ('Playing Next Music')
+                    self.Next()
+                    pass
+                except Exception as e:
+                    print ('Playing Next Music- Error',e)
+                    pass
                 
     def create_control_panel(self):
         frame=Tkinter.LabelFrame(self.root)
